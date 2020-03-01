@@ -91,7 +91,18 @@
     margin-left: 605px;  
     width: 240px;
     height: 3px;
+	
     background: #1c1d1d;
+}
+#square6 img {
+	transition: 1s;
+	
+    
+}
+#square6 img: hover {
+	
+	transform: scale(2);
+    
 }
 #square7 {
     border-radius: 0px 0px 3px 3px;
@@ -337,6 +348,11 @@
     height: 3px;
     background: #1c1d1d;
 }
+#square6L: hover {
+   
+	transform: scale(1.5);
+}
+ 
 #square6B {
     border-radius: 0px 0px 3px 3px;
 	border: 2px solid #151616;
@@ -458,8 +474,7 @@ transition-timing-function: ease is;
 .zIMG2 {
 	overflow:hidden;
     position: absolute;
-	display: flex;
-    justify-content: space-around;
+	
 	
     align:center;
 	margin-left: 10px;
@@ -467,19 +482,39 @@ transition-timing-function: ease is;
 	 height: 250px;
 	 border-radius: 15px;
 	 padding: 4px;
-	 }
-a.zIMG2  {
+	
  -moz-transition: all 1s ease-out;
  -o-transition: all 1s ease-out;
+ transition: 1s;
  -webkit-transition: all 1s ease-out;
  }
  
-a.zIMG2:hover{
+.zIMG2:hover{
  -webkit-transform: scale(1.1);
  -moz-transform: scale(1.1);
+ transform: scale(1.1);
+  width: 250px;
+ height: 250px;
  -o-transform: scale(1.1);
  }  
-  
+ .zIMGw {
+	overflow:hidden;
+    position: absolute;
+	
+
+	
+ -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ transition: 1s;
+ -webkit-transition: all 1s ease-out;
+ }
+ 
+.zIMGw:hover{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ 
+ -o-transform: scale(1.1);
+ }
 .mS{
 	transition: all .5s ease-in-out;
 }
@@ -614,7 +649,7 @@ color: #b8bbc4}
 <script>
 var sI = 1;
 sS(sI);
-var sI = 0;
+
 sSlides(sI);
 function sledS(n) {
   sS(sI += n);
