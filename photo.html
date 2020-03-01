@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title> Deadida</title>
-	<style type="text/css">
-	{
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+@font-face {
+    font-family: 'MyWebFont'; 
+    src: url(fonts/WebFont.ttf);
+   }
+   body {
+   font-family: 'MyWebFont';
+   }
+.limg {
+
+	transition: all .5s ease-in-out;
+	border-radius: 15px;
+}
+
+
+{
     padding: 0;
     margin: 0;
 }
@@ -74,7 +87,7 @@
 #square6 {
     border-radius: 0px 0px 3px 3px;
 	border: 2px solid #171818;
-    margin-top: -7px;
+    margin-top: 10px;
     margin-left: 605px;  
     width: 240px;
     height: 3px;
@@ -227,28 +240,36 @@
 	font-size: 14px;
 	
 	}
-.hea1 {
-	font-family: 'MyWebFont';
-    font-size: 36px;
-	text-indent:380px
-}
+
 .hea2 {
 	font-family: 'MyWebFont';
     font-size: 20px;
 	text-indent:0px
 }
-.zIMG {
+
+.zIMGw {
     position: absolute;
 	display: flex;
     justify-content: space-around;
-	margin-top: 10px;
-    margin-left:680px;
-     width: 500px;
-	 height: 500px;
+	
+    align:center;
+	margin-left: px;
+     width:270px;
+	 height: 200px;
 	 border-radius: 15px;
 	 padding: 4px;
 	 }
-
+.zIMG2left {
+    position: absolute;
+	display: flex;
+    justify-content: space-around;
+	margin-top: -15px;
+    margin-left:610px;
+     width: 250px;
+	 height: 250px;
+	 border-radius: 15px;
+	 padding: 4px;
+	 }
 #line {
 
     border-radius: 0px 0px 3px 3px;
@@ -259,21 +280,238 @@
     height: 3px;
     background: #1c1d1d;
 }
-#square6 {
+#lineph {
+
     border-radius: 0px 0px 3px 3px;
 	border: 2px solid #171818;
-    margin-top: 0px;
-    margin-left: 265px;  
-    width: 380px;
+    margin-top: 10px;
+    margin-left: 268px;  
+    width: 890px;
     height: 3px;
     background: #1c1d1d;
 }
+#lineph2 {
+
+    border-radius: 0px 0px 3px 3px;
+	border: 2px solid #171818;
+    margin-top: 350px;
+    margin-left: 268px;  
+    width: 890px;
+    height: 3px;
+    background: #1c1d1d;
+}
+#square6 {
+    border-radius: 0px 0px 3px 3px;
+	border: 2px solid #171818;
+    margin-top: 20px;
+    margin-left: 275px;  
+    width: 280px;
+    height: 3px;
+    background: #1c1d1d;
+}
+#bgd {
+    border-radius: 0px 0px 0px 0px;
+	border: 2px solid #171818;
+    margin-top: 40px;
+    margin-left: 265px;  
+    width: 910px;
+    height: 300px;
+    background: #1c1d1d;
+}
+.hea1 {
+	font-family: 'MyWebFont';
+    font-size: 24px;
+	text-align: center;
+}
+.hea1L {
+	font-family: 'MyWebFont';
+    font-size: 24px;
+	text-align: center;
+}
+#square6L {
+    border-radius: 0px 0px 3px 3px;
+	border: 2px solid #171818;
+    margin-top: -8px;
+    margin-left: 565px;  
+    width: 280px;
+    height: 3px;
+    background: #1c1d1d;
+}
+#square6B {
+    border-radius: 0px 0px 3px 3px;
+	border: 2px solid #151616;
+    margin-top: px;
+    margin-left: 260px;  
+    width: 280px;
+    height: 3px;
+    background: #151616;
+}
+#square6L {
+    border-radius: 0px 0px 3px 3px;
+	border: 2px solid #171818;
+    margin-top: -7px;
+    margin-left: 565px;  
+    width: 280px;
+    height: 3px;
+    background: #1c1d1d;
+}
+#square6LL {
+    border-radius: 0px 0px 3px 3px;
+	border: 2px solid #171818;
+    margin-top: -7px;
+    margin-left: 865px;  
+    width: 280px;
+    height: 3px;
+    background: #1c1d1d;
+}
+.karusel {
+  padding-top: 50px;
+  width: 295px;
+  height: 295px;
+  position: relative;
+  margin: -4.6% 10% 20% 20%;
+}
+
+
+.prev, .next {
+  
+  position: absolute;
+  top: 110%;
+  width: auto;
+  padding: 16px;
+  margin-top: -60px;
+  color:#b8bbc4;
+  font-weight: bold;
+  font-size: 18px;
+  
+  border-radius: 5px;
+  user-select: none;
+}
+
+
+.next {
+  margin: -20% 10% 0% 167.2%;
+ 
+}
+
+
+.prev:hover, .next:hover {
+  background-color: #212121;
+}
+
+.text {
+  font-family: 'MyWebFont';
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  margin: 100% 100% -10% 70%;
+  text-align: 180px;
+  color:#8dddff;
+}
+
+
+.text1 {
+ 
+  font-size: 12px;
+  margin: 20% 0% 0% 170%;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+a#big {
+    position: absolute;
+	display: flex;
+    justify-content: space-around;
+	
+    align:center;
+	margin-left: 180px;
+     width: 540px;
+	 height: 320px;
+	 border-radius: 15px;
+	 padding: 4px;
+	transition-duration: 0.2s;
+
+transition-timing-function: ease is;
+	 }
+  a#big {
+    background: url(images/big.png); 
+    display: block; 
+    width: 540px; 
+    height: 320px;
+	transition: all ease in;
+   }
+   a#big:hover {width: 550px;
+    height: 330px;
+	margin-left: 175px;
+    background: url(images/big2.png) 
+	
+	
+   }
+.zIMG2 {
+	overflow:hidden;
+    position: absolute;
+	display: flex;
+    justify-content: space-around;
+	
+    align:center;
+	margin-left: 10px;
+     width: 250px;
+	 height: 250px;
+	 border-radius: 15px;
+	 padding: 4px;
+	 }
+a.zIMG2  {
+ -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+ }
+ 
+a.zIMG2:hover{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ }  
+  
+.mS{
+	transition: all .5s ease-in-out;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .5s;
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
 a{text-decoration: none;
-color: #b8bbc4}</style>
+color: #b8bbc4}
+
+
+ a{text-decoration: none;
+color: #b8bbc4}
+
+  .prev, .next,.text {font-size: 11px}
+
+</style>
 </head>
 <body bgcolor="#151616" text="b8bbc4">
-
-
 <div id="square1"> <p class = "headh1">@Deadida32</p>
 <img class="logoimg" src="images/logo.jpg" alt="deadida">
 <div id="square11"><p  id="p1"><a  href="about.html">Обо мне</p></div> </a>
@@ -285,20 +523,127 @@ color: #b8bbc4}</style>
 <h1 class = "headh2">Фотоработы</h1>
  </div>
 <div id="square3"></div>
-	<div><img class="zIMG" src="images/Zzzombie.png" alt="deadida"><p class="hea1">Zombie</p><div id = "square6">
-	<p class="hea2">Работа выполненная в Adobe Photoshop CC 17 при помощи экшена RENEGADE, что не умаляет её ценности,
-	ведь большая часть изображения была отрисована с нуля.</p></div></div>
+<div id = "lineph"><div class="karusel">
+
+<div class="mS fade">
+  <div class="text1">1/6</div>
+  <img class ="limg" src="images/1p.jpg" alt="deadida" style="width:180%">
+  <div class="text">Violin</div>
+</div>
+
+<div class="mS fade">
+  <div class="text1">2/6</div>
+  <img  class ="limg" src="images/2p.png" alt="deadida" style="width:180%">
+  <div class="text">Planets</div>
+</div>
+
+<div class="mS fade">
+  <div class="text1">3/6</div>
+  <img class ="limg" src="images/3p.png" alt="deadida" style="width:180%">
+  <div class="text">Lighthouse</div>
+</div>
+<div class="mS fade">
+  <div class="text1">4/6</div>
+  <img class ="limg" src="images/5p.png" alt="deadida" style="width:180%">
+  <div class="text">Ad Astra</div>
+</div>
+<div class="mS fade">
+  <div class="text1">5/6</div>
+  <img class ="limg" src="images/6p.png" alt="deadida" style="width:180%">
+  <div class="text">The River</div>
+</div>
+<div class="mS fade">
+  <div class="text1">6/6</div>
+  <img class ="limg" src="images/7p.png" alt="deadida" style="width:180%">
+  <div class="text">The moon is falling down</div>
+</div>
+
+
+  
+
+<a class="prev" onclick="sledS(-1)">&#10094;</a>
+<a class="next" onclick="sledS(1)">&#10095;</a>
+
+</div></div>
+<div id="square6B">
+<a onclick="(document.getElementById('big').style.display='none')" href="#"img id="big" alt="deadida"></a>
+
+
+
+</div>
+<div id = "lineph2"></div>
+
+<div id="square6">
+	<p class="hea1" >Zombie</p><img class="zIMG2" src="images/Zzzombie.png" alt="deadida"></div>
+	<div id="square6L">
+	<p class="hea1" >Blue</p><img class="zIMG2" src="images/Zzzombie2.png" alt="deadida"></div>
+    <div id="square6LL">
+	<p class="hea1" >No dream</p><img class="zIMG2" src="images/Zzzombie3.png" alt="deadida"></div>
+	<div id = "lineph2"></div>
+	<div id="square6">
+	<p class="hea1" >Ad astra</p><img class="zIMGw" src="images/z4.png" alt="deadida"></div>
+	<div id="square6L">
+	<p class="hea1" >Out moon</p><img class="zIMGw" src="images/z5.png" alt="deadida"></div>
+    <div id="square6LL">
+	<p class="hea1" >Planets</p><img class="zIMGw" src="images/z6.png" alt="deadida"></div>
+	<div id = "lineph2"></div>
+	<div id="square6">
+	<p class="hea1" >WoW</p><img class="zIMG2" src="images/z7.png" alt="deadida"></div>
+	<div id="square6L">
+	<p class="hea1" >Logo</p><img class="zIMG2" src="images/z8.png" alt="deadida"></div>
+    <div id="square6LL">
+	<p class="hea1" >TL</p><img class="zIMG2" src="images/z9.png" alt="deadida"></div>
+	<div id = "lineph2"></div>
+	<div id="square6">
+	<p class="hea1" >Inside</p><img class="zIMG2" src="images/z1.png" alt="deadida"></div>
+	<div id="square6L">
+	<p class="hea1" >Violin</p><img class="zIMG2" src="images/z2.png" alt="deadida"></div>
+    <div id="square6LL">
+	<p class="hea1" >Lighthouse</p><img class="zIMG2" src="images/z3.png" alt="deadida"></div>
+	<div id = "lineph2"></div>
 	
-	<div id = "line"></div>
 
-	<div><img class="zIMG" src="images/Zzzombie2.png" alt="deadida"><p class="hea1">Blue inside</p><div id = "square6">
-	<p class="hea2">Работа выполненная в Adobe Photoshop CC 19 также при помощи экшена RENEGADE,в качестве исходника выступает фотография девушки в одежде с совершенно другими цветами
-	которые были заменены на пост-продакшене,также как и цвет глаз и глаза в целом.
-	<br><a  href="https://www.instagram.com/rvr.lnv/">Модель: Кроткова Наталья</p></a></div></div>
-	<div id = "line"></div>
 
-	<div><img class="zIMG" src="images/Zzzombie3.png" alt="deadida"><p class="hea1">No dream</p><div id = "square6">
-	<p class="hea2">Изображение создано в Adobe Photoshop CC 19 полностью вручную,на этом изображении из настоящего только потрясающая красота модели и циркуль. Даже бараманные палочки были вставлены при помощи монтажа, как и фон, изначально состоящий из общажной стены.</p></div></div>
-	<div id = "line"></div>
+
+<br>
+
+<div style="text-align:center">
+   
+</div>
+
+<script>
+var sI = 1;
+sS(sI);
+var sI = 0;
+sSlides(sI);
+function sledS(n) {
+  sS(sI += n);
+}
+
+function schas(n) {
+  sS(sI = n);
+}
+
+function sS(n) {
+  var i;
+  var slides = document.getElementsByClassName("mS");
+  var sS = document.getElementsByClassName("big");
+  if (n > slides.length) {sI = 1}    
+  if (n < 1) {sI = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  
+  slides[sI-1].style.display = "block";  
+  
+}
+
+function sled(sS) {
+  sSlides(sI += sS);
+}
+if (sS > 0){
+sled.style.display = "none"; }
+</script>
+
 </body>
-</html>
+</html> 
