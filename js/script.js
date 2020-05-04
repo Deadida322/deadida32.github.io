@@ -18,7 +18,7 @@ $(document).ready(function(){
 		x0 = e.pageX;
 	});
 	$(".middle_slide_line").bind("mouseup", function(e) {
-		var iLine = -7 * ($("#slide1").width() + 5);
+		var iLine = -6.92* ($("#slide1").width() + 5);
 		var iLine2 = -13 * ($("#slide1").width() + 5);
 		x1 = e.pageX;
 		var xm = 1.3*(x1 - x0);
