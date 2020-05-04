@@ -46,7 +46,7 @@ $(document).ready(function(){
 		x02 = e.pageX;
 	});
 	$(".middle_slide_line2").bind("mouseup", function(e) {
-		var iLine2 = -7 * ($("#slide1").width() + 5);
+		var iLine2 = -8.9 * ($("#slide1").width() + 5);
 		var iLine22 = -13 * ($("#slide1").width() + 5);
 		x12 = e.pageX;
 		var xm2 = 1.5*(x12 - x02);
@@ -73,7 +73,7 @@ $(document).ready(function(){
 		x03 = e.pageX;
 	});
 	$(".middle_slide_line3").bind("mouseup", function(e) {
-		var iLine3 = -7 * ($("#slide1").width() + 5);
+		var iLine3 = -10.8 * ($("#slide1").width() + 5);
 		var iLine23 = -13 * ($("#slide1").width() + 5);
 		x13 = e.pageX;
 		var xm3 = 1.6*(x13 - x03);
