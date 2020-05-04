@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="js/jquery-3.5.0.js"></script>
+	<script src="js/script.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style>
 @font-face {
@@ -10,27 +12,17 @@
    body {
    font-family: 'MyWebFont';
    }
-.limg {
-
-	transition: all .5s ease-in-out;
-	border-radius: 15px;
-}
 
 
-{
-    padding: 0;
-    margin: 0;
-}
-   h1, h2, h3 {
+
+ h1, h2, h3 {
+  font-family: 'MyWebFont';
   font-weight: 400;
   margin: 0;
 }
 @font-face {
     font-family: 'MyWebFont'; 
     src: url(fonts/WebFont.ttf);
-   }
-   h1 {
-   font-family: 'MyWebFont';
    }
 
 .head1 {
@@ -94,16 +86,7 @@
 	
     background: #1c1d1d;
 }
-#square6 img {
-	transition: 1s;
-	
-    
-}
-#square6 img: hover {
-	
-	transform: scale(2);
-    
-}
+
 #square7 {
     border-radius: 0px 0px 3px 3px;
 	border: 2px solid #171818;
@@ -230,9 +213,8 @@
 	}
 #p1:hover { 
 	transform:scale(1.02);
-	transform:skew(0deg);
-	}
 	
+	}
 #p2 { font-family: 'MyWebFont';
 	font-size: 16px;
 	
@@ -254,38 +236,7 @@
 	}	
 #p4 { font-family: 'MyWebFont';
 	font-size: 14px;
-	
-	}
-
-.hea2 {
-	font-family: 'MyWebFont';
-    font-size: 20px;
-	text-indent:0px
 }
-
-.zIMGw {
-    position: absolute;
-	display: flex;
-    justify-content: space-around;
-	
-    align:center;
-	margin-left: px;
-     width:270px;
-	 height: 200px;
-	 border-radius: 15px;
-	 padding: 4px;
-	 }
-.zIMG2left {
-    position: absolute;
-	display: flex;
-    justify-content: space-around;
-	margin-top: -15px;
-    margin-left:610px;
-     width: 250px;
-	 height: 250px;
-	 border-radius: 15px;
-	 padding: 4px;
-	 }
 #line {
 
     border-radius: 0px 0px 3px 3px;
@@ -310,11 +261,13 @@
 
     border-radius: 0px 0px 3px 3px;
 	border: 2px solid #171818;
-    margin-top: 350px;
-    margin-left: 268px;  
-    width: 890px;
+    top: 520px;
+    left: 290px;  
+    width: 950px;
     height: 3px;
     background: #1c1d1d;
+	position: absolute;
+	transform: rotate(31deg);
 }
 #square6 {
     border-radius: 0px 0px 3px 3px;
@@ -359,199 +312,217 @@
 }
  
 #square6B {
-    border-radius: 0px 0px 3px 3px;
-	border: 2px solid #151616;
-    margin-top: px;
-    margin-left: 260px;  
-    width: 280px;
+   
+    margin-top: 3px;
+    margin-left: 530px;  
+    width: 230px;
     height: 3px;
-    background: #151616;
+   
+	
 }
-#square6L {
-    border-radius: 0px 0px 3px 3px;
-	border: 2px solid #171818;
-    margin-top: -7px;
-    margin-left: 565px;  
-    width: 280px;
-    height: 3px;
-    background: #1c1d1d;
-}
-#square6LL {
-    border-radius: 0px 0px 3px 3px;
-	border: 2px solid #171818;
-    margin-top: -7px;
-    margin-left: 865px;  
-    width: 280px;
-    height: 3px;
-    background: #1c1d1d;
-}
-.karusel {
-  padding-top: 50px;
-  width: 295px;
-  height: 295px;
-  position: relative;
-  margin: -4.6% 10% 20% 20%;
+#ots {
+   
+    margin-top: 690px;
+    margin-left: 800px;
+   
+	
 }
 
-
-.prev, .next {
-  
-  position: absolute;
-  top: 110%;
-  width: auto;
-  padding: 16px;
-  margin-top: -60px;
-  color:#b8bbc4;
-  font-weight: bold;
-  font-size: 18px;
-  
-  border-radius: 5px;
-  user-select: none;
-}
-
-
-.next {
-  margin: -20% 10% 0% 167.2%;
- 
-}
-
-
-.prev:hover, .next:hover {
-  background-color: #212121;
-}
-
-.text {
-  font-family: 'MyWebFont';
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  margin: 100% 100% -10% 70%;
-  text-align: 180px;
-  color:#8dddff;
-}
-
-
-.text1 {
- 
-  font-size: 12px;
-  margin: 20% 0% 0% 170%;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-
-
-.active, .dot:hover {
-  background-color: #717171;
-}
 a#big {
     position: absolute;
 	display: flex;
     justify-content: space-around;
-	
     align:center;
 	margin-left: 180px;
-     width: 540px;
-	 height: 320px;
-	 border-radius: 15px;
-	 padding: 4px;
+    width: 540px;
+	height: 320px;
+	border-radius: 15px;
+	padding: 4px;
 	transition-duration: 0.2s;
-
-transition-timing-function: ease is;
-	 }
-  a#big {
+	transition-timing-function: ease is;
+}
+a#big {
     background: url(images/big.png); 
     display: block; 
-    width: 540px; 
-    height: 320px;
+    width: 450px; 
+    height: 270px;
 	transition: all ease in;
-   }
-   a#big:hover {width: 550px;
-    height: 330px;
+	z-index: 999999;
+}
+a#big:hover {
+    width: 450px;
+    height: 280px;
 	margin-left: 175px;
     background: url(images/big2.png) 
-	
-	
-   }
-.zIMG2 {
-	overflow:hidden;
+}
+
+ a{text-decoration: none; color: #b8bbc4}
+ 
+.middle_slide {
     position: absolute;
-	
-	
-    align:center;
-	margin-left: 10px;
-     width: 250px;
-	 height: 250px;
-	 border-radius: 15px;
-	 padding: 4px;
-	
- -moz-transition: all 1s ease-out;
- -o-transition: all 1s ease-out;
- transition: 1s;
- -webkit-transition: all 1s ease-out;
- }
- 
-.zIMG2:hover{
- -webkit-transform: scale(1.5);
- -moz-transform: scale(1.5);
- transform: scale(1.5);
-  width: 250px;
- height: 250px;
-z-index:99999999;
+    left: 62%;
+    transform: translate(-50%);
+    top: 28.5vh;
+    width: 29%;
+    height: 37vh;
+    background: #1c1d1d;
+    border-radius: 15px;
+    background-image: url(images/img/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+	z-index: -1;
+}
 
- -o-transform: scale(1.5);
- }  
- .zIMGw {
-	overflow:hidden;
+
+
+.index_slider {
     position: absolute;
+    width: 62%;
+    height: 13vh;
+    left: 17%;
+    transform: translate(-50%);
+    bottom: 13vh;
+    background: #1c1d1d;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 9px;
+	transform: rotate(31deg);
+}
+.index_slider2 {
+    position: absolute;
+    width: 41%;
+    height: 13vh;
+    left: 20%;
+    transform: translate(-50%);
+    bottom:1.5vh;
+    background: #1c1d1d;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 9px;
+	transform: rotate(31deg);
+}
+.index_slider3 {
+    position: absolute;
+    width: 22%;
+    height: 13vh;
+    left: 20%;
+    transform: translate(-50%);
+    bottom: -8vh;
+    background: #1c1d1d;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 9px;
+	transform: rotate(31deg);
+}
+.index_slider4 {
+    position: absolute;
+    width: 9%;
+    height: 10vh;
+    left: 20%;
+    transform: translate(-50%);
+    bottom: -17vh;
+    background: #1c1d1d;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 30px;
+	transform: rotate(31deg);
+}
 
+.middle_slide_line {
+    display: flex;
+    width: 2000px;
+    height: 100%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: 2s ease all;
+    cursor: pointer;
 	
 
+}
+
+.middle_slide_line2 {
+    display: flex;
+    width: 2000px;
+    height: 100%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: 2s ease all;
+    cursor: pointer;
 	
- -moz-transition: all 1s ease-out;
- -o-transition: all 1s ease-out;
- transition: 1s;
- -webkit-transition: all 1s ease-out;
+
+}
+
+.middle_slide_line3 {
+    display: flex;
+    width: 2000px;
+    height: 100%;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    transition: 2s ease all;
+    cursor: pointer;
+	
+
+}
+
+.slides {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20%;
+    height: 100%;
+    margin-right: 5px;
+	border: 5px #3e3740;
+	border-radius:  5px;
+    user-select: none;
+	
+}
+
+
+.slides {
+	z-index: 9;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-out;
+ }
+.slides:hover{
+	-webkit-transform: scale(1.13);
+	-moz-transform: scale(1.13);
+	-o-transform: scale(1.13);
+	z-index: 9999999;
  }
  
-.zIMGw:hover{
- -webkit-transform: scale(1.5);
- -moz-transform: scale(1.5);
- 
- -o-transform: scale(1.5);
- z-index:99999999;
- }
-.mS{
-	transition: all .5s ease-in-out;
-}
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: .5s;
-  animation-name: fade;
-  animation-duration: .5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .2} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .2} 
-  to {opacity: 1}
-}
-
-a{text-decoration: none;
-color: #b8bbc4}
-
-
- a{text-decoration: none;
-color: #b8bbc4}
-
-  .prev, .next,.text {font-size: 11px}
+#slide1 {background-image: url("images/img/1.jpg")}
+#slide2 {background-image: url("images/img/2.png")}
+#slide3 {background-image: url("images/img/3.png")}
+#slide4 {background-image: url("images/img/4.png")}
+#slide5 {background-image: url("images/img/5.png")}
+#slide6 {background-image: url("images/img/6.png")}
+#slide7 {background-image: url("images/img/7.png")}
+#slide8 {background-image: url("images/img/8.png")}
+#slide9 {background-image: url("images/img/9.jpg")}
+#slide10 {background-image: url("images/img/10.png")}
+#slide11 {background-image: url("images/img/11.png")}
+#slide12 {background-image: url("images/img/12.png")}
+#slide13 {background-image: url("images/img/13.png")}
+#slide14 {background-image: url("images/img/14.jpg")}
+#slide15 {background-image: url("images/img/15.png")}
+#slide16 {background-image: url("images/img/16.png")}
+#slide17 {background-image: url("images/img/17.png")}
+#slide18 {background-image: url("images/img/18.png")}
+#slide19 {background-image: url("images/img/19.png")}
+#slide20 {background-image: url("images/img/20.png")}
+#slide21 {background-image: url("images/img/21.png")}
+#slide22 {background-image: url("images/img/22.png")}
+#slide23 {background-image: url("images/img/23.jpg")}
+#slide24 {background-image: url("images/img/24.png")}
+#slide25 {background-image: url("images/img/25.png")}
+#slide26 {background-image: url("images/img/26.png")}
+#slide27 {background-image: url("images/img/27.png")}
+#slide28 {background-image: url("images/img/28.png")}
+#slide29 {background-image: url("images/img/29.png")}
+#slide30 {background-image: url("images/img/30.png")}
+#slide31 {background-image: url("images/img/31.png")}
 
 </style>
 </head>
@@ -567,126 +538,74 @@ color: #b8bbc4}
 <h1 class = "headh2">Фотоработы</h1>
  </div>
 <div id="square3"></div>
-<div id = "lineph"><div class="karusel">
-
-<div class="mS fade">
-  <div class="text1">1/6</div>
-  <img class ="limg" src="images/1p.jpg" alt="deadida" style="width:180%">
-  <div class="text">Violin</div>
-</div>
-
-<div class="mS fade">
-  <div class="text1">2/6</div>
-  <img  class ="limg" src="images/2p.png" alt="deadida" style="width:180%">
-  <div class="text">Planets</div>
-</div>
-
-<div class="mS fade">
-  <div class="text1">3/6</div>
-  <img class ="limg" src="images/3p.png" alt="deadida" style="width:180%">
-  <div class="text">Lighthouse</div>
-</div>
-<div class="mS fade">
-  <div class="text1">4/6</div>
-  <img class ="limg" src="images/5p.png" alt="deadida" style="width:180%">
-  <div class="text">Ad Astra</div>
-</div>
-<div class="mS fade">
-  <div class="text1">5/6</div>
-  <img class ="limg" src="images/6p.png" alt="deadida" style="width:180%">
-  <div class="text">The River</div>
-</div>
-<div class="mS fade">
-  <div class="text1">6/6</div>
-  <img class ="limg" src="images/7p.png" alt="deadida" style="width:180%">
-  <div class="text">The moon is falling down</div>
-</div>
-
-
-  
-
-<a class="prev" onclick="sledS(-1)">&#10094;</a>
-<a class="next" onclick="sledS(1)">&#10095;</a>
-
+<div id = "lineph">
 </div></div>
+
 <div id="square6B">
 <a onclick="(document.getElementById('big').style.display='none')" href="#"img id="big" alt="deadida"></a>
-
-
-
 </div>
-<div id = "lineph2"></div>
+<div id="lineph2"></div>
+<div class="middle_slide"></div>
+		<div class="index_slider">
+			<div class="middle_slide_line">
+				<div id="slide1" class="slides"></div>
+				<div id="slide2" class="slides"></div>
+				<div id="slide3" class="slides"></div>
+				<div id="slide4" class="slides"></div>
+				<div id="slide5" class="slides"></div>
+				<div id="slide6" class="slides"></div>
+				<div id="slide7" class="slides"></div>
+				<div id="slide8" class="slides"></div>
+				<div id="slide9" class="slides"></div>	
+				<div id="slide10" class="slides"></div>
+				<div id="slide11" class="slides"></div>
+				<div id="slide12" class="slides"></div>
+				<div id="slide13" class="slides"></div>
+			</div>
+		</div>
+<div class="middle_slide"></div>
+		<div class="index_slider2">
+			<div class="middle_slide_line2">
+				<div id="slide14" class="slides"></div>
+				<div id="slide15" class="slides"></div>
+				<div id="slide16" class="slides"></div>
+				<div id="slide17" class="slides"></div>
+				<div id="slide18" class="slides"></div>
+				<div id="slide19" class="slides"></div>
+				<div id="slide20" class="slides"></div>
+				<div id="slide21" class="slides"></div>
+				<div id="slide22" class="slides"></div>	
+				<div id="slide23" class="slides"></div>
+				<div id="slide25" class="slides"></div>
+				<div id="slide24" class="slides"></div>
+				<div id="slide26" class="slides"></div>
+			</div>
+		</div>
+<div class="middle_slide"></div>
+		<div class="index_slider3">
+			<div class="middle_slide_line3">
+				<div id="slide27" class="slides"></div>
+				<div id="slide28" class="slides"></div>
+				<div id="slide10" class="slides"></div>
+				<div id="slide29" class="slides"></div>
+				<div id="slide2" class="slides"></div>
+				<div id="slide30" class="slides"></div>
+				<div id="slide20" class="slides"></div>
+				<div id="slide6" class="slides"></div>
+				<div id="slide22" class="slides"></div>	
+				<div id="slide7" class="slides"></div>
+				<div id="slide14" class="slides"></div>
+				<div id="slide31" class="slides"></div>
+				<div id="slide10" class="slides"></div>
+			</div>
+		</div>
 
-<div id="square6">
-	<p class="hea1" >Zombie</p><img class="zIMG2" src="images/Zzzombie.png" alt="deadida"></div>
-	<div id="square6L">
-	<p class="hea1" >Blue</p><img class="zIMG2" src="images/Zzzombie2.png" alt="deadida"></div>
-    <div id="square6LL">
-	<p class="hea1" >No dream</p><img class="zIMG2" src="images/Zzzombie3.png" alt="deadida"></div>
-	<div id = "lineph2"></div>
-	<div id="square6">
-	<p class="hea1" >Ad astra</p><img class="zIMGw" src="images/z4.png" alt="deadida"></div>
-	<div id="square6L">
-	<p class="hea1" >Out moon</p><img class="zIMGw" src="images/z5.png" alt="deadida"></div>
-    <div id="square6LL">
-	<p class="hea1" >Planets</p><img class="zIMGw" src="images/z6.png" alt="deadida"></div>
-	<div id = "lineph2"></div>
-	<div id="square6">
-	<p class="hea1" >WoW</p><img class="zIMG2" src="images/z7.png" alt="deadida"></div>
-	<div id="square6L">
-	<p class="hea1" >Logo</p><img class="zIMG2" src="images/z8.png" alt="deadida"></div>
-    <div id="square6LL">
-	<p class="hea1" >TL</p><img class="zIMG2" src="images/z9.png" alt="deadida"></div>
-	<div id = "lineph2"></div>
-	<div id="square6">
-	<p class="hea1" >Inside</p><img class="zIMG2" src="images/z1.png" alt="deadida"></div>
-	<div id="square6L">
-	<p class="hea1" >Violin</p><img class="zIMG2" src="images/z2.png" alt="deadida"></div>
-    <div id="square6LL">
-	<p class="hea1" >Lighthouse</p><img class="zIMG2" src="images/z3.png" alt="deadida"></div>
-	<div id = "lineph2"></div>
-	
-
-
-
-<br>
-
-<div style="text-align:center">
-   
+<div class="index_slider4"></div>
+<div id="ots"></div>
+<div id = "lineph">
 </div>
-
 <script>
-var sI = 1;
-sS(sI);
 
-sSlides(sI);
-function sledS(n) {
-  sS(sI += n);
-}
-
-function schas(n) {
-  sS(sI = n);
-}
-
-function sS(n) {
-  var i;
-  var slides = document.getElementsByClassName("mS");
-  var sS = document.getElementsByClassName("big");
-  if (n > slides.length) {sI = 1}    
-  if (n < 1) {sI = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  
-  slides[sI-1].style.display = "block";  
-  
-}
-
-function sled(sS) {
-  sSlides(sI += sS);
-}
-if (sS > 0){
-sled.style.display = "none"; }
 </script>
 
 </body>
